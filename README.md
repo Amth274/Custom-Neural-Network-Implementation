@@ -82,5 +82,14 @@ git push origin feature/YourFeature
 ```
 
 
+##Contact
+For questions or feedback, you can reach out to me:
+
+Name: Aum Thaker
+Email: 225100006@iitdh.ac.in
+GitHub: github.com/Amth274
+Feel free to connect or follow me for updates and new projects!
+
+
 
 

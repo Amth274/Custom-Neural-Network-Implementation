@@ -21,3 +21,66 @@ This project is a custom implementation of a neural network from scratch, design
 You can install NumPy using pip:
 ```bash
 pip install numpy
+```
+
+## Installation
+Clone the repository:
+```bash
+git clone https://github.com/yourusername/custom-neural-network.git
+cd custom-neural-network
+```
+Install dependencies
+```python
+pip install numpy
+```
+
+## Usage
+Prepare the Data:
+
+Prepare your dataset in a suitable format (e.g., NumPy arrays).
+Update the data loading and preprocessing code as needed.
+Instantiate and Train the Model:
+
+Open main.py and configure the neural network parameters and training settings. Example usage:
+
+```python 
+import numpy as np
+from neural_network import NeuralNetwork, Optimizer
+
+# Example data
+X = np.random.rand(100, 10)  # 100 samples, 10 features
+y = np.random.randint(0, 3, 100)  # 100 labels for 3 classes
+
+# Define the model architecture
+layers = [10, 64, 32, 3]  # Input layer, two hidden layers, output layer
+
+# Instantiate the neural network and optimizer
+nn = NeuralNetwork(layers)
+nn.optimizer = Optimizer(optimizer_type='adam', learning_rate=0.01)
+
+# Train the network
+nn.train(X, y, epochs=1000, batch_size=32, learning_rate=0.01)
+```
+## Contributing 
+If you would like to contribute to this project, please follow these steps:
+
+Fork the repository: Click the "Fork" button on the top right of this page.
+
+Create a new branch:
+```bash
+git checkout -b feature/YourFeature
+```
+
+Commit your changes:
+```bash
+git commit -am 'Add new feature'
+```
+
+Push to the branch:
+```bash
+git push origin feature/YourFeature
+```
+
+
+
+
